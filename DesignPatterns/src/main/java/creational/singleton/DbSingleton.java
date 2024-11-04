@@ -8,8 +8,7 @@ public class DbSingleton {
 
     private Connection conn = null;
 
-    // Initialization on demand holder
-    // In same time lazy loaded and thread safe
+    // Initialization on demand holder, in same time lazy loaded and thread safe
     // JVM guarantees thread safety
     private static class LazyHolder {
         static final DbSingleton INSTANCE = new DbSingleton();
