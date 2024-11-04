@@ -29,6 +29,11 @@ public class DbSingleton {
         return LazyHolder.INSTANCE;
     }
 
+    /**
+     * Retrieve connection
+     *
+     * @return connection, we can be sure that connection is created
+     */
     public Connection getConnection() {
         return conn;
     }
