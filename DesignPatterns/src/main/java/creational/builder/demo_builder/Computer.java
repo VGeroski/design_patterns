@@ -7,6 +7,7 @@ public class Computer {
 
     /**
      * Static inner class that builder needs
+     * (this can be refactored to be separate class)
      */
     public static class ComputerBuilder {
         private HDD diskSize;
